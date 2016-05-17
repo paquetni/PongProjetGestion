@@ -1,0 +1,5 @@
+Inviter joueur / Form invitations a joindre equipe (Champ acceptation invitation oui/non)
+Ajouter carte crédit
+Onglet profil dans Graphique
+Mot de passe oublié
+Photo pour équipe

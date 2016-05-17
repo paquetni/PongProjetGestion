@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5477AF28-23EC-49CA-8ABF-EF57F3497ADE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProjetFinal_Prototype_Interface</RootNamespace>
+    <AssemblyName>ProjetFinal Prototype Interface</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAcheterMatchs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAcheterMatchs.Designer.cs">
+      <DependentUpon>FormAcheterMatchs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAjouterJoueur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAjouterJoueur.Designer.cs">
+      <DependentUpon>FormAjouterJoueur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCreerEquipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCreerEquipe.Designer.cs">
+      <DependentUpon>FormCreerEquipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCreerTournoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCreerTournoi.Designer.cs">
+      <DependentUpon>FormCreerTournoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEquipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEquipe.Designer.cs">
+      <DependentUpon>FormEquipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFacture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFacture.Designer.cs">
+      <DependentUpon>FormFacture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormImprimer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormImprimer.Designer.cs">
+      <DependentUpon>FormImprimer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInscriptionTournoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInscriptionTournoi.Designer.cs">
+      <DependentUpon>FormInscriptionTournoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormJoueur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormJoueur.Designer.cs">
+      <DependentUpon>FormJoueur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrincipal.Designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRejoindreEquipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRejoindreEquipe.Designer.cs">
+      <DependentUpon>FormRejoindreEquipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRejoindreMatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRejoindreMatch.Designer.cs">
+      <DependentUpon>FormRejoindreMatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRejoindreTournoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRejoindreTournoi.Designer.cs">
+      <DependentUpon>FormRejoindreTournoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStatsEquipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStatsEquipe.Designer.cs">
+      <DependentUpon>FormStatsEquipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTableauBord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTableauBord.Designer.cs">
+      <DependentUpon>FormTableauBord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTournois.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTournois.Designer.cs">
+      <DependentUpon>FormTournois.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAcheterMatchs.resx">
+      <DependentUpon>FormAcheterMatchs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAjouterJoueur.resx">
+      <DependentUpon>FormAjouterJoueur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCreerEquipe.resx">
+      <DependentUpon>FormCreerEquipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCreerTournoi.resx">
+      <DependentUpon>FormCreerTournoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEquipe.resx">
+      <DependentUpon>FormEquipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFacture.resx">
+      <DependentUpon>FormFacture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormImprimer.resx">
+      <DependentUpon>FormImprimer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInscriptionTournoi.resx">
+      <DependentUpon>FormInscriptionTournoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormJoueur.resx">
+      <DependentUpon>FormJoueur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRejoindreEquipe.resx">
+      <DependentUpon>FormRejoindreEquipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRejoindreMatch.resx">
+      <DependentUpon>FormRejoindreMatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRejoindreTournoi.resx">
+      <DependentUpon>FormRejoindreTournoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStatsEquipe.resx">
+      <DependentUpon>FormStatsEquipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTableauBord.resx">
+      <DependentUpon>FormTableauBord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTournois.resx">
+      <DependentUpon>FormTournois.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
